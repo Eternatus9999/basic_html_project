@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #heart{
+            display: none;
+        }
+        label{
+            font-size: 2.6rem; 
+            color: #aaa; 
+            cursor: pointer; 
+            transition: color 0.3s ease, transform 0.1s ease;
+        }
+        input:checked + label{
+            color: red;
+            transform: scale(1.1);
+        }
+        input:active{
+            transform: scale(.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input style="display: none;" type="checkbox" name="" id="heart">
+        <label for="heart" style="">&#10084;</label>
+    </div>
+</body>
+</html>
